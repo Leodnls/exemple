@@ -170,7 +170,7 @@ form label {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
-    padding: 30px 20px; /* Increase padding */
+    padding: 20px; /* Increase padding */
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
@@ -241,22 +241,27 @@ button:hover {
     margin-top: 20px;
 }
 
+
 /* Responsive Design */
 @media (max-width: 600px) {
     #feedbackContainer {
-        padding: 15px;
+        padding: 10px 15px; /* Réduction du padding pour ne pas trop serrer le contenu */
+        margin-top: 0; /* Réinitialiser toute marge en haut */
     }
 
     h1 {
         font-size: 1.6em;
+        margin-top: 10px; /* Ajouter un peu de marge en haut si nécessaire */
     }
 
     p {
         font-size: 1em;
+        margin-top: 15px; /* Espacement léger entre le texte et les champs */
     }
 
     button {
         font-size: 1.1em;
+        margin-top: 10px; /* Espacement léger entre le bouton et le texte */
     }
 
     input[type="text"], input[type="email"], textarea {
