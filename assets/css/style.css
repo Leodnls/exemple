@@ -233,4 +233,9 @@ button:hover {
     }
 }
 
-/* Ajouter des règles supplémentaires si nécessaire */
+.container {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    
+}
