@@ -245,24 +245,30 @@ button:hover {
 /* Responsive Design */
 @media (max-width: 600px) {
     #feedbackContainer {
-        padding: 10px 15px; /* Réduction du padding pour ne pas trop serrer le contenu */
-        margin-top: 0; /* Réinitialiser toute marge en haut */
+        padding: 20px 15px; /* Garde un padding modéré */
+        margin-top: 40px; /* Augmentation de la marge du haut pour plus d'espace */
     }
 
     h1 {
         font-size: 1.6em;
-        margin-top: 10px; /* Ajouter un peu de marge en haut si nécessaire */
+        margin-top: 10px; /* Légère marge au-dessus du titre si nécessaire */
     }
 
     p {
         font-size: 1em;
-        margin-top: 15px; /* Espacement léger entre le texte et les champs */
+        margin-top: 20px; /* Espacement entre le texte et les champs */
     }
 
     button {
         font-size: 1.1em;
-        margin-top: 10px; /* Espacement léger entre le bouton et le texte */
+        margin-top: 15px; /* Espacement entre le bouton et le texte */
     }
+
+    input[type="text"], input[type="email"], textarea {
+        font-size: 1em;
+    }
+}
+
 
     input[type="text"], input[type="email"], textarea {
         font-size: 1em;
