@@ -246,7 +246,7 @@ button:hover {
 @media (max-width: 600px) {
     #feedbackContainer {
         padding: 20px 15px; /* Garde un padding modéré */
-        margin-top: 40px; /* Augmentation de la marge du haut pour plus d'espace */
+        margin-top: 80px; /* Augmentation de la marge du haut pour plus d'espace */
     }
 
     h1 {
