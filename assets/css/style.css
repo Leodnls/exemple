@@ -1,4 +1,4 @@
-/* Global styles */
+/* Global styles (restent inchangés) */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -33,13 +33,13 @@ h1, h2 {
     font-size: 40px;
     cursor: pointer;
     display: flex;
-    flex-direction: row; /* Aligner horizontalement les étoiles */
+    flex-direction: row;
     justify-content: center;
     margin-bottom: 20px;
 }
 
 .star {
-    margin: 0 5px; /* Espacement horizontal entre les étoiles */
+    margin: 0 5px;
     color: #ddd;
     transition: color 0.3s, transform 0.3s;
 }
@@ -123,54 +123,18 @@ form label {
     align-items: center;
 }
 
-/* Centrer tout le contenu du body */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    text-align: center;
-    font-family: Arial, sans-serif;
-}
-
-/* Centrer le texte des titres et des paragraphes */
-h1, p {
-    text-align: center;
-    width: 100%;
-}
-
-/* Style pour le formulaire et son contenu */
-form {
-    max-width: 600px;
-    width: 100%;
-    margin: 20px auto;
-}
-
-form label {
-    display: flex;
-    align-items: center;
-}
-
-/* Global reset for margins and paddings */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Style for the feedback container */
+/* Page feedback container styles (ajouts pour le problème mobile) */
 #feedbackContainer {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Aligns the content vertically */
-    align-items: center; /* Centers horizontally */
-    height: auto; /* Auto height to fit content */
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
     width: 90%;
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
-    padding: 20px; /* Increase padding */
+    padding: 30px 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
@@ -188,7 +152,6 @@ h1 {
     font-size: 1.8em;
     margin-bottom: 10px;
     color: #333;
-    font-family: 'Arial', sans-serif;
 }
 
 /* Adjusted paragraph style with more space */
@@ -196,7 +159,7 @@ p {
     font-size: 1.2em;
     color: #555;
     margin-bottom: 20px;
-    margin-top: 30px; /* Adjusted to move it further down */
+    margin-top: 30px;
 }
 
 /* Input fields styling */
@@ -227,7 +190,7 @@ button {
     cursor: pointer;
     width: 100%;
     transition: background-color 0.3s ease;
-    margin-top: 15px; /* Added margin-top to give space above the button */
+    margin-top: 15px;
 }
 
 button:hover {
@@ -241,36 +204,32 @@ button:hover {
     margin-top: 20px;
 }
 
-
 /* Responsive Design */
 @media (max-width: 600px) {
-    #feedbackContainer {
-        padding: 20px 15px; /* Garde un padding modéré */
-        margin-top: 10vh; /* Augmentation de la marge du haut pour plus d'espace */
-    }
-
+    /* Ajuster la taille des titres */
     h1 {
         font-size: 1.6em;
-        margin-top: 10px; /* Légère marge au-dessus du titre si nécessaire */
+        margin-top: 20px;  /* Amélioration de l'espacement en haut pour les petits écrans */
     }
 
+    /* Ajuster la taille du texte des paragraphes */
     p {
         font-size: 1em;
-        margin-top: 20px; /* Espacement entre le texte et les champs */
     }
 
+    /* Boutons et champs de formulaire */
     button {
         font-size: 1.1em;
-        margin-top: 15px; /* Espacement entre le bouton et le texte */
     }
 
     input[type="text"], input[type="email"], textarea {
         font-size: 1em;
     }
-}
 
-
-    input[type="text"], input[type="email"], textarea {
-        font-size: 1em;
+    /* Ajustement de la marge top du container principal */
+    #feedbackContainer {
+        margin-top: 50px;  /* Ajout d'une marge plus importante pour les petits écrans */
     }
 }
+
+/* Ajouter des règles supplémentaires si nécessaire */
