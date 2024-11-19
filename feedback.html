@@ -11,8 +11,11 @@
         <h1>Vos Retours</h1>
         <p>Merci de bien vouloir nous partager vos remarques, pour que nous puissions nous améliorer.</p>
 
-        <form id="feedbackForm" action="https://script.google.com/macros/s/AKfycbwkcVnD15WGQDzUEOwKDxNyArQ9bnOIduICw5KdtPwuYQI47_2v8bJKhDtP7yyu9hlc/exec" method="POST">
-            
+        <form name="feedback" id="feedbackForm" method="POST" action="https://script.google.com/macros/s/AKfycbynPIE6STl9qA1RAmD2RJXxiCgU46-ZGSvJlEjw1kqiTjP9fUNmS72nmLK-KH7g2rKM/exec">
+
+
+            <input type="hidden" name="form-name" value="feedback" />
+
             <label for="firstName">Prénom (facultatif) :</label><br>
             <input type="text" id="firstName" name="firstName" placeholder="Votre prénom"><br><br>
 
@@ -31,6 +34,6 @@
         <p id="thankYouMessage" style="display: none; color: green;">Merci pour vos retours ! Nous les avons bien reçus.</p>
     </div>
 
-    <script src="assets/js/feedback.js"></script>
+    
 </body>
 </html>
