@@ -5,6 +5,6 @@ i = 1
 WScript.Sleep 10000
 
 Do While i <= 5
-    MsgBox "you've been hacked"
+    MsgBox "you've been hacked", vbCritical + vbOKOnly, "Warning"
     i = i + 1
 Loop
